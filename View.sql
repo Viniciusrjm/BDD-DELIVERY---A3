@@ -4,7 +4,7 @@ INSERT INTO usuarios (nome, email, senha, sem_gluten, vegetariano, vegano, low_c
 ('Carla Dias', 'carla.dias@example.com', 'hashed_senha_carla', 0, 0, 1, 0),
 ('Daniel Rocha', 'daniel.rocha@example.com', 'hashed_senha_daniel', 0, 0, 0, 0);
 
-INSERT INTO restaurantes(nome,razao_social ,cnpj,email,senha,endereco,telefone,tipo,logo_path) VALUES  (
+INSERT INTO restaurantes(nome,razao_social ,cnpj,email,senha,endereco,telefone,tipo,logo_path,updated_at) VALUES  (
     'Restaurante Sabor da Terra',
     'Sabor da Terra Alimentos Ltda',
     '12.345.678/0001-90',
@@ -25,3 +25,7 @@ INSERT INTO usuarios (nome, email, senha) VALUES ('Ana Duplicada', 'ana.silva@ex
 SELECT id, nome, email, sem_gluten, vegetariano, vegano, low_carb, created_at FROM usuarios;
 
  SELECT*FROM restaurantes;
+
+
+-- testando para ver se o git está funcionando corretamente
+-- Teste: Ver restaurantes inseridos
